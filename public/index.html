@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatCord</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <div class="join-container">
+    <header class="join-header">
+      <h1><i class="fas fa-smile"></i>Persona</h1>
+    </header>
+    <main class="join-main">
+      <form action="chat.html">
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" required>
+        </div>
+        <div class="form-control">
+          <label for="room">Persona</label>
+          <select name="room" id="room">
+            <option value="ProAdvisor">ProAdvisor</option>
+            <option value="Buddy">Buddy</option>
+            <option value="Jester">Jester</option>
+            <option value="SRK">SRK</option>
+            <option value="RantMan">RantMan</option>
+            <option value="Roast">Roast</option>
+
+          </select>
+        </div>
+        <button type="submit" class="btn">Join Chat</button>
+      </form>
+    </main>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/qs@6.5.2/dist/qs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
