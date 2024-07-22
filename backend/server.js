@@ -5,7 +5,7 @@ const socketio = require('socket.io');
 const cors = require('cors');
 
 const formatMessage = require('./utils/messages');
-const { userJoin, getCurrentUser, userLeave, getRoomUsers, getAllUsers } = require('./utils/users');
+const { userJoin, getCurrentUser, userLeave, getRoomUsers, getAllUsers } = require ("./utils/users");
 
 const app = express();
 
